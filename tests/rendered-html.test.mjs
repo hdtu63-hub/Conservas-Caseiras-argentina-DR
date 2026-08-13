@@ -12,14 +12,17 @@ async function render() {
   );
 }
 
-test("renderiza a página de vendas completa", async () => {
+test("renderiza la página de ventas completa en español LATAM", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /Receitas Saudáveis para Congelar/);
-  assert.match(html, /Mais de 100 receitas/);
-  assert.match(html, /Perguntas/);
+  assert.match(html, /Comidas Congeladas Fáciles/);
+  assert.match(html, /Más de 100 recetas/);
+  assert.match(html, /Preguntas/);
   assert.match(html, /rápidas\./);
+  assert.match(html, /\$6\.50/);
+  assert.match(html, /\$9\.00/);
+  assert.doesNotMatch(html, /R\$|pt-BR/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });

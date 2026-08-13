@@ -2,16 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Receitas Saudáveis para Congelar · 100+ Receitas",
-  description: "Mais de 100 receitas saudáveis e fáceis para congelar. Cozinhe uma vez e coma bem a semana inteira.",
+  title: "Comidas Congeladas Fáciles para Mamás Ocupadas · 100+ Recetas",
+  description: "Más de 100 recetas fáciles para congelar, pensadas para mamás ocupadas. Cocina una vez y come toda la semana sin complicarte la vida.",
   openGraph: {
-    title: "Receitas Saudáveis para Congelar",
-    description: "100+ receitas práticas para uma semana inteira de comida gostosa.",
-    images: [{ url: "/og.png", width: 1920, height: 1080, alt: "Receitas saudáveis para congelar" }],
+    title: "Comidas Congeladas Fáciles para Mamás Ocupadas",
+    description: "100+ recetas prácticas para una semana entera de comida rica.",
   },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  twitter: { card: "summary" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body>{children}</body></html>;
+  return <html lang="es-419"><body>{children}</body></html>;
 }

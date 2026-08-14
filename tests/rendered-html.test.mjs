@@ -17,10 +17,11 @@ test("renderiza la página de ventas completa en español LATAM", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /Comidas Congeladas Fáciles/);
-  assert.match(html, /Más de 100 recetas/);
+  assert.match(html, /Conservas Caseras/);
+  assert.match(html, /100\+ recetas rentables/);
   assert.match(html, /Preguntas/);
-  assert.match(html, /rápidas\./);
+  assert.match(html, /frecuentes\./);
+  assert.doesNotMatch(html, /\bvideos\b|comidas congeladas/i);
   assert.match(html, /\$6\.50/);
   assert.match(html, /\$9\.00/);
   assert.doesNotMatch(html, /R\$|pt-BR/);

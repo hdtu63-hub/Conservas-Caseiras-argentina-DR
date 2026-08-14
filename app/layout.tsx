@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Comidas Congeladas Fáciles para Mamás Ocupadas · 100+ Recetas",
-  description: "Más de 100 recetas fáciles para congelar, pensadas para mamás ocupadas. Cocina una vez y come toda la semana sin complicarte la vida.",
+  title: "Conservas Caseras · 100+ Recetas Rentables",
+  description: "Aprende a preparar conservas caseras con más de 100 recetas rentables, guías de almacenamiento, costos, precios y ventas.",
   openGraph: {
-    title: "Comidas Congeladas Fáciles para Mamás Ocupadas",
-    description: "100+ recetas prácticas para una semana entera de comida rica.",
+    title: "Conservas Caseras · 100+ Recetas Rentables",
+    description: "Prepara, conserva y vende productos artesanales desde casa.",
+    images: [{ url: "/og-conservas.png", width: 1536, height: 911, alt: "Conservas Caseras · 100+ Recetas Rentables" }],
   },
-  twitter: { card: "summary" },
+  twitter: { card: "summary_large_image", images: ["/og-conservas.png"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -24,6 +24,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
         fbq('init','1832021307783603');
         fbq('track','PageView');
+        fbq('track','ViewContent', {
+          content_name: 'Colección de Conservas Caseras',
+          content_category: 'Producto digital',
+          content_ids: ['conservas-caseras'],
+          content_type: 'product'
+        });
       ` }} />
       <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" async defer data-utmify-prevent-subids="" />
     </head>

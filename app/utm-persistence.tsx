@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 
 const STORAGE_KEY = "conservas_utm_params";
+const PIXEL_FLUSH_DELAY_MS = 250;
 const TRACKING_PARAMETERS = [
   "utm_source",
   "utm_medium",
@@ -55,6 +56,19 @@ function decorateCheckoutLink(anchor: HTMLAnchorElement, parameters: Record<stri
   if (anchor.href !== decoratedUrl) anchor.href = decoratedUrl;
 }
 
+function trackInitiateCheckout() {
+  const fbq = (window as Window & {
+    fbq?: (...args: ["track", "InitiateCheckout"]) => void;
+  }).fbq;
+
+  if (typeof fbq === "function") {
+    fbq("track", "InitiateCheckout");
+    return true;
+  }
+
+  return false;
+}
+
 export default function UtmPersistence() {
   useEffect(() => {
     const parameters = collectTrackingParameters();
@@ -71,7 +85,22 @@ export default function UtmPersistence() {
 
     const handleCheckoutClick = (event: MouseEvent) => {
       const anchor = (event.target as Element | null)?.closest<HTMLAnchorElement>('a[href*="pay.hotmart.com"]');
-      if (anchor) decorateCheckoutLink(anchor, collectTrackingParameters());
+      if (anchor) {
+        decorateCheckoutLink(anchor, collectTrackingParameters());
+        const eventQueued = trackInitiateCheckout();
+        const isSameTabNavigation = event.button === 0
+          && !event.metaKey
+          && !event.ctrlKey
+          && !event.shiftKey
+          && !event.altKey
+          && anchor.target !== "_blank";
+
+        if (eventQueued && isSameTabNavigation) {
+          event.preventDefault();
+          const checkoutUrl = anchor.href;
+          window.setTimeout(() => window.location.assign(checkoutUrl), PIXEL_FLUSH_DELAY_MS);
+        }
+      }
     };
 
     document.addEventListener("click", handleCheckoutClick, true);

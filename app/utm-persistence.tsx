@@ -57,9 +57,9 @@ function decorateCheckoutLink(anchor: HTMLAnchorElement, parameters: Record<stri
 }
 
 function trackInitiateCheckout() {
-  const fbq = (window as Window & {
-    fbq?: (...args: ["track", "InitiateCheckout"]) => void;
-  }).fbq;
+  type FbqFn = (...args: unknown[]) => void;
+  const w = window as Window & { fbq?: FbqFn; _fbq?: FbqFn };
+  const fbq = w.fbq ?? w._fbq;
 
   if (typeof fbq === "function") {
     fbq("track", "InitiateCheckout");

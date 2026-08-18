@@ -24,6 +24,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
         fbq('init','1832021307783603');
         fbq('init','1796210454402934');
+        fbq('init','1664356628237992');
         fbq('track','PageView');
         fbq('track','ViewContent', {
           content_name: 'Colección de Conservas Caseras',
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <body>
       <noscript><img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1832021307783603&ev=PageView&noscript=1" alt="" /></noscript>
       <noscript><img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1796210454402934&ev=PageView&noscript=1" alt="" /></noscript>
+      <noscript><img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1664356628237992&ev=PageView&noscript=1" alt="" /></noscript>
       <UtmPersistence />
       {children}
     </body>

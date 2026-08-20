@@ -1,6 +1,6 @@
 const checkout = {
-  starter: "https://pay.hotmart.com/F107045842R?off=g8ppmjnk&checkoutMode=10&bid=1786753571476",
-  premium: "https://pay.hotmart.com/F107045842R?off=gorn5vwu&checkoutMode=10",
+  starter: "https://pay.hotmart.com/F107045842R?off=gt5mxatw&checkoutMode=10&bid=1787261744414",
+  premium: "https://pay.hotmart.com/F107045842R?off=mmvw4n04&checkoutMode=10&bid=1787261750898",
 };
 
 const benefits = [
@@ -38,19 +38,19 @@ const deliverables = [
 ];
 
 const bonuses = [
-  { title: "Mermeladas Artesanales", label: "BONO 01", value: "US$12", image: "/images/bonuses/04-produciendo-mermeladas.jpg", description: "Amplía tu repertorio aprendiendo a preparar mermeladas artesanales con diferentes sabores, texturas y presentaciones." },
-  { title: "Tabla práctica de Costos y Precios", label: "BONO 02", value: "US$11", image: "/images/bonuses/02-costos-precios.jpg", description: "Organiza tus costos, calcula tu margen y llega al precio de venta de cada producto con mayor facilidad." },
-  { title: "Ganancias en un Frasco", label: "BONO 03", value: "US$10", image: "/images/bonuses/03-ganancias-frasco.jpg", description: "Una guía para dar el siguiente paso: pasar de preparar conservas para casa a organizarlas como productos para vender." },
-  { title: "Guía práctica para conservar mejor tus productos", label: "BONO 04", value: "US$12", image: "/images/bonuses/01-conservar-mejor.jpg", description: "Una referencia rápida con cuidados para preservar mejor el sabor, la textura y la calidad de tus preparaciones." },
+  { title: "Mermeladas Artesanales", label: "BONO 01", value: "$4.500", image: "/images/bonuses/04-produciendo-mermeladas.jpg", description: "Amplía tu repertorio aprendiendo a preparar mermeladas artesanales con diferentes sabores, texturas y presentaciones." },
+  { title: "Tabla práctica de Costos y Precios", label: "BONO 02", value: "$4.000", image: "/images/bonuses/02-costos-precios.jpg", description: "Organiza tus costos, calcula tu margen y llega al precio de venta de cada producto con mayor facilidad." },
+  { title: "Ganancias en un Frasco", label: "BONO 03", value: "$3.800", image: "/images/bonuses/03-ganancias-frasco.jpg", description: "Una guía para dar el siguiente paso: pasar de preparar conservas para casa a organizarlas como productos para vender." },
+  { title: "Guía práctica para conservar mejor tus productos", label: "BONO 04", value: "$4.500", image: "/images/bonuses/01-conservar-mejor.jpg", description: "Una referencia rápida con cuidados para preservar mejor el sabor, la textura y la calidad de tus preparaciones." },
 ];
 
 const testimonials = [
-  ["/images/testimonials/01-carolina.jpg", "Carolina Méndez", "Bogotá · Colombia", "Nunca había hecho conservas y me daba miedo el tema de la esterilización. Empecé con la mermelada de fresa y me salió muy bien. La explicación está tan clara que me dio seguridad desde el primer frasco."],
-  ["/images/testimonials/02-paula.jpg", "Paula Santos", "Medellín · Colombia", "Comencé con tres recetas para probar en casa y terminé preparando frascos para mi familia y mis vecinas. Todo está explicado de forma sencilla y fácil de seguir."],
-  ["/images/testimonials/03-mariana.jpg", "Mariana Castro", "Cali · Colombia", "La tabla de costos fue lo que más me ayudó. Yo sabía preparar, pero no sabía cuánto cobrar. Ahora ya tengo claro cuánto gasto, cuánto gano y cómo ponerle precio a cada frasco."],
-  ["/images/testimonials/04-fernanda.jpg", "Fernanda Lima", "Quito · Ecuador", "Me encantaron las recetas de pimentones y ajíes. Quedan deliciosas, se ven hermosas en el frasco y varias personas ya me preguntaron si las vendo."],
-  ["/images/testimonials/05-beatriz.jpg", "Beatriz Álvarez", "Puebla · México", "Nunca había preparado conservas y pensé que iba a ser complicado. Pero empecé con las recetas para principiantes y pude seguir todo sin problema. Ya tengo varios frascos listos en mi cocina."],
-  ["/images/testimonials/06-ana.jpg", "Ana Rodríguez", "Lima · Perú", "Lo que más me gustó es que no es solo un recetario. También aprendí sobre almacenamiento, etiquetas y venta. Me ahorró muchísimo tiempo de búsqueda y pruebas por mi cuenta."],
+  ["/images/testimonials/01-carolina.jpg", "Carolina Méndez", "Buenos Aires · Argentina 🇦🇷", "Nunca había hecho conservas y me daba miedo el tema de la esterilización. Empecé con la mermelada de fresa y me salió muy bien. La explicación está tan clara que me dio seguridad desde el primer frasco."],
+  ["/images/testimonials/02-paula.jpg", "Paula Santos", "Córdoba · Argentina 🇦🇷", "Comencé con tres recetas para probar en casa y terminé preparando frascos para mi familia y mis vecinas. Todo está explicado de forma sencilla y fácil de seguir."],
+  ["/images/testimonials/03-mariana.jpg", "Mariana Castro", "Rosario · Argentina 🇦🇷", "La tabla de costos fue lo que más me ayudó. Yo sabía preparar, pero no sabía cuánto cobrar. Ahora ya tengo claro cuánto gasto, cuánto gano y cómo ponerle precio a cada frasco."],
+  ["/images/testimonials/04-fernanda.jpg", "Fernanda Lima", "Mendoza · Argentina 🇦🇷", "Me encantaron las recetas de pimentones y ajíes. Quedan deliciosas, se ven hermosas en el frasco y varias personas ya me preguntaron si las vendo."],
+  ["/images/testimonials/05-beatriz.jpg", "Beatriz Álvarez", "Tucumán · Argentina 🇦🇷", "Nunca había preparado conservas y pensé que iba a ser complicado. Pero empecé con las recetas para principiantes y pude seguir todo sin problema. Ya tengo varios frascos listos en mi cocina."],
+  ["/images/testimonials/06-ana.jpg", "Ana Rodríguez", "Mar del Plata · Argentina 🇦🇷", "Lo que más me gustó es que no es solo un recetario. También aprendí sobre almacenamiento, etiquetas y venta. Me ahorró muchísimo tiempo de búsqueda y pruebas por mi cuenta."],
 ];
 
 const faqs = [
@@ -71,21 +71,22 @@ function HeroMedia() {
     <div className="image-shadow" />
     <img src="/images/especialista-conservas.webp" alt="Especialista en conservas caseras junto a frascos y su guía de recetas" />
     <div className="seal"><i>incluye</i><strong>100+</strong><span>recetas</span></div>
+    <span className="flag-badge flag-top-left" aria-hidden="true">🇦🇷</span>
   </div>;
 }
 
 export default function Home() {
-  const ticker = ["Edición limitada · oferta válida solo por hoy", "Acceso de por vida", "+100 recetas rentables", "Garantía de 30 días", "Entrega digital inmediata"];
+  const ticker = ["🇦🇷 Edición limitada · oferta válida solo por hoy", "Acceso de por vida", "+100 recetas rentables", "Garantía de 30 días", "Entrega digital inmediata"];
   return <main>
     <div className="ticker" aria-label="Información de la oferta"><div>{[...ticker, ...ticker, ...ticker].map((item, i) => <span key={i} aria-hidden={i >= ticker.length}><i>✦</i>{item}</span>)}</div></div>
 
     <section className="hero paper"><div className="container hero-grid">
       <div className="hero-copy">
-        <p className="eyebrow">Guías + recetas + herramientas de venta</p>
+        <p className="eyebrow">🇦🇷 Guías + recetas + herramientas de venta</p>
         <h1><strong>+100 recetas de</strong><br/><em>conservas caseras</em><br/><mark>para preparar y vender</mark></h1>
         <p className="hero-lead">Convierte ingredientes simples en conservas artesanales que puedes disfrutar en casa o vender.</p>
         <div className="mobile-hero-media"><HeroMedia /></div>
-        <div className="hero-action"><ArrowButton href="#ofertas">Quiero las +100 recetas</ArrowButton><div className="price"><del>$29</del><strong>$6.50</strong><small>solo hoy</small></div></div>
+        <div className="hero-action"><ArrowButton href="#ofertas">Quiero las +100 recetas</ArrowButton><div className="price"><del>$26.900</del><strong>$10.000</strong><small>solo hoy</small></div></div>
         <p className="hero-detail">Aprende paso a paso a preparar más de 100 conservas artesanales, almacenarlas correctamente, calcular tus costos y convertir tus recetas favoritas en productos para vender.</p>
         <div className="trust"><span>♢ Pago seguro</span><span>↻ Garantía de 30 días</span><span>∞ Acceso de por vida</span></div>
       </div>
@@ -101,18 +102,18 @@ export default function Home() {
 
     <section className="chapters paper section"><div className="container"><div className="section-heading"><h2>Todo el proceso, organizado en <em>6 áreas clave.</em></h2><p>No es solo un recetario. Aprendes desde los primeros cuidados del frasco hasta la preparación, conservación, costos y precio de venta de tus conservas.</p></div><div className="chapter-grid">{modules.map(([num, title, subtitle]) => <article key={num}><span>Mód. {num}</span><h3>{title}</h3><p>{subtitle}</p></article>)}</div><div className="gallery-heading"><div><h3>13 materiales para preparar, conservar y vender tus propias conservas.</h3><p>Recetarios y guías prácticas para acompañarte desde el primer frasco hasta el precio de venta.</p></div></div><div className="deliverables-grid">{deliverables.map(([item, image], i) => <article key={item}><span>{String(i + 1).padStart(2, "0")}</span><div className="mini-cover"><img src={image} alt={item} loading="lazy"/></div><h4>{item}</h4></article>)}</div></div></section>
 
-    <section className="bonus section paper"><div className="container"><div className="bonus-heading"><div><p className="eyebrow">4 bonos extras incluidos</p><h2>Llévate hoy <em>US$45 en materiales adicionales.</em></h2></div><img src="/images/cards/sales-gift-set.jpg" alt="Conservas artesanales presentadas como regalos" loading="lazy"/></div><div className="bonus-grid">{bonuses.map((bonus) => <article key={bonus.title}><header><span>{bonus.label}</span><b>Gratis hoy</b></header><img src={bonus.image} alt={bonus.title} loading="lazy"/><h3>{bonus.title}</h3><p>{bonus.description}</p><footer><span>Valor</span><del>{bonus.value}</del></footer></article>)}</div><p className="fine-print">Los 4 bonos tienen un valor total de US$45. Hoy están incluidos junto con todo el material principal.</p></div></section>
+    <section className="bonus section paper"><div className="container"><div className="bonus-heading"><div><p className="eyebrow">4 bonos extras incluidos</p><h2>Llévate hoy <em>$16.800 en materiales adicionales.</em></h2></div><img src="/images/cards/sales-gift-set.jpg" alt="Conservas artesanales presentadas como regalos" loading="lazy"/></div><div className="bonus-grid">{bonuses.map((bonus) => <article key={bonus.title}><header><span>{bonus.label}</span><b>Gratis hoy</b></header><img src={bonus.image} alt={bonus.title} loading="lazy"/><h3>{bonus.title}</h3><p>{bonus.description}</p><footer><span>Valor</span><del>{bonus.value}</del></footer></article>)}</div><p className="fine-print">Los 4 bonos tienen un valor total de $16.800. Hoy están incluidos junto con todo el material principal.</p></div></section>
 
     <section className="pricing section paper" id="ofertas"><div className="container"><div className="center-heading"><h2>Elige cómo quieres <em>empezar.</em></h2><p>Un solo pago. Acceso de por vida. Elige entre la edición esencial o llévate la colección completa.</p></div><div className="pricing-grid">
-      <Offer edition="Edición esencial" title="Guía Esencial de Conservas" price="$6.50" oldPrice="$29" href={checkout.starter} buttonLabel="Quiero la edición esencial" features={["100+ recetas para preparar y vender", "30 recetas fáciles para empezar", "Conservas especiales", "Almacenamiento y conservación", "Acceso de por vida"]} unavailable={["Tabla de costos y precios", "Guías de ventas y ganancias", "Consejos para conservar mejor"]}/>
-      <Offer edition="Edición completa" title="Colección Completa de Conservas" price="$9.00" oldPrice="US$49" priceNote="Solo US$2.50 más que la Edición Esencial" href={checkout.premium} buttonLabel="Quiero todo por US$9" featured features={["Todo lo incluido en la Edición Esencial", "Videoclases paso a paso", "Recetas de pimentones y ajíes artesanales", "Tabla práctica de costos y precios", "Guías para vender tus conservas", "Materiales sobre precios y ganancias", "Acceso de por vida"]} bonuses={["Manual de etiquetas para conservas", "Guía Ganancias en un Frasco", "Mermeladas Artesanales", "Guía práctica de conservación"]}/>
-    </div><div className="pricing-notes"><strong>Ambas las ediciones son de pago único y tienen acceso de por vida.</strong><span>Además, cuentas con 30 días para probar el material.</span></div></div></section>
+      <Offer edition="Guía Esencial" title="Guía Esencial de Conservas" price="$10.000" oldPrice="$26.900" href={checkout.starter} buttonLabel="Quiero la Guía Esencial" features={["100+ recetas para preparar y vender", "30 recetas fáciles para empezar", "Conservas especiales", "Almacenamiento y conservación", "Acceso de por vida"]} unavailable={["Tabla de costos y precios", "Guías de ventas y ganancias", "Consejos para conservar mejor"]}/>
+      <Offer edition="Edición completa" title="Colección Completa de Conservas" price="$12.900" oldPrice="$39.900" priceNote="Solo $2.900 más que la Guía Esencial" href={checkout.premium} buttonLabel="Quiero todo por $12.900" featured features={["Todo lo incluido en la Guía Esencial", "Videoclases paso a paso", "Recetas de pimentones y ajíes artesanales", "Tabla práctica de costos y precios", "Guías para vender tus conservas", "Materiales sobre precios y ganancias", "Acceso de por vida"]} bonuses={["Manual de etiquetas para conservas", "Guía Ganancias en un Frasco", "Mermeladas Artesanales", "Guía práctica de conservación"]}/>
+    </div><div className="pricing-notes"><strong>Ambas ediciones son de pago único y tienen acceso de por vida.</strong><span>Además, contás con 30 días para probar el material.</span></div></div></section>
 
     <section className="testimonials section paper"><div className="container"><h2>Lo que dicen quienes ya empezaron a <em>preparar sus conservas.</em></h2><div className="testimonial-grid">{testimonials.map(([photo, name, location, quote]) => <figure key={name}><figcaption><img className="avatar" src={photo} alt={`Foto de ${name}`} loading="lazy"/><div><strong>{name}</strong><span>{location}</span></div></figcaption><blockquote>{quote}</blockquote><div className="stars" aria-label="5 de 5 estrellas">★★★★★</div></figure>)}</div><div className="center-action"><ArrowButton href="#ofertas">Quiero empezar hoy</ArrowButton></div></div></section>
 
     <section className="faq section paper"><div className="narrow"><p className="eyebrow">Antes de empezar</p><h2>Preguntas <em>frecuentes.</em></h2><div className="faq-list">{faqs.map(([question, answer], i) => <details key={question}><summary><span>{String(i + 1).padStart(2, "0")}</span><strong>{question}</strong><b aria-hidden="true">+</b></summary><p>{answer}</p></details>)}</div></div></section>
 
-    <footer className="site-footer paper"><div className="container"><div className="footer-grid"><h2>Conservas<br/><em>caseras</em> <mark>rentables</mark><br/>desde casa.</h2><div><span>La colección</span><p>Recetas, conservación, costos, precios y ventas reunidos en un solo material digital.</p></div><div><span>Acceso</span><p>Entrega digital inmediata. Tuyo para siempre, con garantía de devolución de 30 días.</p></div></div><div className="footer-bottom"><span>© 2026 · Todos los derechos reservados</span><span>Prepara · Conserva · Emprende</span></div></div></footer>
+    <footer className="site-footer paper"><div className="container"><div className="footer-grid"><h2>🇦🇷 Conservas<br/><em>caseras</em> <mark>rentables</mark><br/>desde casa.</h2><div><span>La colección</span><p>Recetas, conservación, costos, precios y ventas reunidos en un solo material digital.</p></div><div><span>Acceso</span><p>Entrega digital inmediata. Tuyo para siempre, con garantía de devolución de 30 días.</p></div></div><div className="footer-bottom"><span>© 2026 · Todos los derechos reservados 🇦🇷</span><span>Prepara · Conserva · Emprende</span></div></div></footer>
   </main>;
 }
 

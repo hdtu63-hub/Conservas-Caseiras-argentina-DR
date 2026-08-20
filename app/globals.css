@@ -60,6 +60,8 @@ h2 { font-size:clamp(2.65rem,5.5vw,5rem); line-height:1.02; }
 .hero-photo .image-shadow { position:absolute; inset:14px -14px -14px 14px; background:#dce7d9; }
 .hero-photo img { position:relative; width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center; }
 .hero-photo .seal { top:-22px; right:-24px; }
+.flag-badge { position:absolute; z-index:10; font-size:80px; line-height:1; filter:drop-shadow(0 10px 20px rgba(36,18,10,.18)); pointer-events:none; }
+.flag-top-left { top:-24px; left:-34px; }
 
 .product-visual { position:relative; min-height:585px; max-width:500px; margin-inline:auto; }
 .visual-backdrop { position:absolute; inset:55px 5px 30px 65px; background:#dfe7d4; transform:rotate(2deg); }
@@ -265,11 +267,12 @@ details>p { max-width:720px; margin:0 0 28px 62px; color:#6a6058; line-height:1.
   .hero h1 { font-size:clamp(2.55rem,12vw,3.3rem); line-height:.92; }
   .hero h1 em { margin-top:10px; }
   .hero-lead { margin-top:32px; font-size:16px; text-decoration:none; }
-  .mobile-hero-media { width:100%; margin-top:18px; }
+  .mobile-hero-media { width:100%; margin-top:18px; overflow:visible; }
   .hero-photo .image-shadow { inset:10px -8px -10px 8px; }
   .hero-photo img { aspect-ratio:4/3; object-position:center; }
   .hero-photo .seal { width:84px; right:-8px; top:-14px; }
   .hero-photo .seal strong { font-size:19px; }
+  .flag-top-left { left:16px; top:-10px; font-size:50px; }
   .hero-action { margin-top:20px; }
   .hero-action { flex-direction:column; gap:18px; }
   .hero-action .button { order:0; }
